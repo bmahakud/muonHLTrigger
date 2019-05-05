@@ -79,6 +79,21 @@ readNtuplesPostfilter_IterL3_OIonly.C
 
 # Step-3: Make plots
 
+All macros have been put in my public area: /afs/cern.ch/user/b/bmahakud/public/PlotterMacros/Macros. There are different folders inside the directory. Each folder contains the root file and the corresponding macro. The list of folders available are :
+```
+April92019       CPUtimeVsSeeds                   InputFiles         IterL3vsIOvsOI      TimingPlots
+BoostedJpsi      DataVsMCIterL3                   IOiterations       Level-1MuonTrigger  TriggerPerformancesInData
+BoostedJPsi      DiffHitlessHitbased              IOnOIinDiffPeriod  Level-2Trigger
+CascadeAndTkMu   ForJanImpactParameterResolution  IterL3_InsideOut   PromptLowPt
+CascadeVsIterL3  GroupedVsStandard                IterL3_OutsideIn   README.md
+copyToNote.sh    HighLevelMuonTrigger             IterL3Stuff        SFOptimization
+```
+
+For any queries email to: bibhu.phy@gmail.com
+
+
+
+
 
 
 
