@@ -97,6 +97,23 @@ For any queries email to: bibhu.phy@gmail.com
 
 
 
+# Debugger
+
+The same Ntupler can be used as a debugger. The relevant dependencies for using it as debugger has beed added in this version of ntupler.  You just need to change the .cc file inside Analysis/plugins
+https://github.com/bmahakud/muonHLTrigger/blob/master/Analyzers/plugins/MuonNtuples.cc_DebuggerVersion
+```
+cd Analysis/plugins
+mv MuonNtuples.cc_DebuggerVersion MuonNtuples.cc
+
+```
+compile and run the code : 
+```
+cmsRun BoostedJPsi102XMC.py 
+```
+
+If you need to add more functions and details needed to debug, one can copy relevant details from 
+https://github.com/JanFSchulte/MuonHLTNtuples/blob/master/Debugger/plugins/MuonHLTDebugger.cc
+
 
 
 
