@@ -43,6 +43,21 @@ There are example crab configs available for crab submission: CrabConfig_MC.py, 
 
 # Produce Efficiency plots running on top of Ntuples produced from the previous step.
 
+Macros are available inside the directory :
+https://github.com/bmahakud/muonHLTrigger/tree/master/Tools/Macros
+
+How to run the macros:
+The following command is used to run all the macros. You can run one by one. First the check the input file locations before running the commands.
+```
+python RunMacroAll.py 
+```
+
+If you want to run one by one , the command should be like the following
+```
+root -l -b -q 'readNtuplesPostfilter_L1WrtOffline.C("/eos/uscms/store/user/bmahakud/ProductionHLTAN_LPC_IterL3HighStat/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/ProductionHLTAN_LPC_IterL3HighStat/181130_193653/0000/muonNtupleData_*.root","DYMC2018")
+```
+
+
 
 
 
