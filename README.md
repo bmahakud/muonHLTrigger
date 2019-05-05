@@ -1,4 +1,4 @@
-# muonHLTrigger
+#Step-1: Ntuple Maker
 This code setup is used to produce plots for the  http://bmahakud.web.cern.ch/bmahakud/MuonHLT/NoteLatest/AN-17-185_temp.pdf and in general could be used to produce intermediate plots while running re-HLT. To setup the framework, instructions are given in 10_2_10, but should work in other versions of cmssw without much problem.
 ```
 cmsrel CMSSW_10_2_10 
@@ -41,7 +41,7 @@ There are example crab configs available for crab submission: CrabConfig_MC.py, 
 
 
 
-# Produce Efficiency plots running on top of Ntuples produced from the previous step.
+# Step-2: Produce Efficiency plots running on top of Ntuples produced from the previous step.
 
 Macros are available inside the directory :
 https://github.com/bmahakud/muonHLTrigger/tree/master/Tools/Macros
@@ -56,6 +56,13 @@ If you want to run one by one , the command should be like the following
 ```
 root -l -b -q 'readNtuplesPostfilter_L1WrtOffline.C("/eos/uscms/store/user/bmahakud/ProductionHLTAN_LPC_IterL3HighStat/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/ProductionHLTAN_LPC_IterL3HighStat/181130_193653/0000/muonNtupleData_*.root","DYMC2018")
 ```
+
+After completing this step, you will get several root files , inside which efficiency plots will be stored. You can proceed to the next step to produce plots using the root files obtained in this step.
+
+# Step-3: Make plots
+
+
+
 
 
 
