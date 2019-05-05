@@ -1,0 +1,984 @@
+DEBUG 2019-02-27 09:23:30,301: 	 Executing command: 'submit'
+DEBUG 2019-02-27 09:23:30,304: 	 Found CRAB cache file /uscms/home/bmahakud/.crab3
+DEBUG 2019-02-27 09:23:30,316: 	 Checking credentials
+DEBUG 2019-02-27 09:23:30,316: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 09:23:30,316: 	 Getting proxy life time left
+DEBUG 2019-02-27 09:23:30,420: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 43190
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:23:30,525: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 43189
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:23:30,525: 	 Proxy lifetime 43190 secs is different from voms extension lifetime 43189 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 09:23:30,525: 	 Proxy valid for 11:59:49 hours
+INFO 2019-02-27 09:23:30,526: 	 Will use CRAB configuration file CrabConfig_MC.py
+DEBUG 2019-02-27 09:23:30,526: 	 Loading CRAB configuration file.
+DEBUG 2019-02-27 09:23:30,537: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2019-02-27 09:23:30,655: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:23:30,655: 	 Checking credentials
+DEBUG 2019-02-27 09:23:30,655: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 09:23:30,655: 	 Getting proxy life time left
+DEBUG 2019-02-27 09:23:30,759: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 43190
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:23:30,864: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 43189
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:23:30,864: 	 Proxy lifetime 43190 secs is different from voms extension lifetime 43189 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 09:23:30,864: 	 Proxy valid for 11:59:49 hours
+DEBUG 2019-02-27 09:23:30,968: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/bmahakud/x509up_u48295 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:23:31,625: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-27 09:23:31,736: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:23:31,736: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-27 09:23:31,736: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-27 09:23:32,742: 	 Executing : 
+ command : myproxy-info -l 38cba6a83d31340888152db125f3085668ba8c76 -s myproxy.cern.ch
+ output : username: 38cba6a83d31340888152db125f3085668ba8c76
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 71:26:56  (3.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:23:32,743: 	 Myproxy is valid: 257216
+DEBUG 2019-02-27 09:23:32,847: 	 Executing : 
+ command : openssl x509 -noout -in ~/.globus/usercert.pem -dates
+ output : notBefore=Sep  4 23:23:39 2018 GMT
+notAfter=Oct  9 23:23:39 2019 GMT
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:23:32,860: 	 Delegating a myproxy for 720:00 hours
+DEBUG 2019-02-27 09:23:32,860: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-27 09:23:41,481: 	 Executing : 
+ command : export GT_PROXY_MODE=rfc ; myproxy-init -d -n -s myproxy.cern.ch -x -R '/DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch' -x -Z '/DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch' -l '38cba6a83d31340888152db125f3085668ba8c76' -t 168:00 -c 720:00
+ output : Your identity: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+Creating proxy .............................................................................................................. Done
+Proxy Verify OK
+Your proxy is valid until: Fri Mar 29 10:23:40 2019
+A proxy valid for 720 hours (30.0 days) for user 38cba6a83d31340888152db125f3085668ba8c76 now exists on myproxy.cern.ch.
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:23:41,481: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-27 09:23:42,388: 	 Executing : 
+ command : myproxy-info -l 38cba6a83d31340888152db125f3085668ba8c76 -s myproxy.cern.ch
+ output : username: 38cba6a83d31340888152db125f3085668ba8c76
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 719:59:58  (30.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:23:42,388: 	 My-proxy delegated.
+DEBUG 2019-02-27 09:23:42,389: 	 Command use: submit
+DEBUG 2019-02-27 09:23:42,389: 	 Options use: ['-c', 'CrabConfig_MC.py']
+DEBUG 2019-02-27 09:23:43,003: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-27 09:23:43,003: 	 Instance is prod
+DEBUG 2019-02-27 09:23:43,004: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-27 09:23:43,004: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-27 09:23:43,004: 	 Started submission
+DEBUG 2019-02-27 09:23:43,004: 	 Working on /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 09:23:43,694: 	 Loading required information from the environment
+DEBUG 2019-02-27 09:23:43,694: 	 Found CMSSW_10_2_10 for slc6_amd64_gcc700 with base /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10
+DEBUG 2019-02-27 09:23:43,694: 	 Loading required information from the environment
+DEBUG 2019-02-27 09:23:43,694: 	 Found CMSSW_10_2_10 for slc6_amd64_gcc700 with base /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10
+DEBUG 2019-02-27 09:23:43,716: 	 UNIQUE NAME: tarUUID 5ce524e2-ecd2-4a87-959f-e559d084df3f 
+DEBUG 2019-02-27 09:23:43,717: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'ProduceRecoSample_v1'
+config.General.requestName = 'ProduceRecoSample_v1'
+config.section_('JobType')
+config.JobType.psetName = 'step3_RAW2DIGI_L1Reco_RECO_RECOSIM3.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.outputFiles = ['RECO3.root']
+config.JobType.numCores = 1
+config.JobType.maxMemoryMB = 2500
+config.section_('Data')
+config.Data.inputDataset = '/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW'
+config.Data.outputDatasetTag = 'ProduceRecoSample_v1'
+config.Data.totalUnits = 1
+config.Data.unitsPerJob = 1
+config.Data.splitting = 'FileBased'
+config.Data.useParent = True
+config.Data.outLFNDirBase = '/store/user/bmahakud/ProduceRecoSample_v1'
+config.section_('Site')
+config.Site.storageSite = 'T3_US_FNALLPC'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2019-02-27 09:23:43,717: 	 self.config.JobType.psetName: step3_RAW2DIGI_L1Reco_RECO_RECOSIM3.py
+INFO 2019-02-27 09:23:43,717: 	 Importing CMSSW configuration step3_RAW2DIGI_L1Reco_RECO_RECOSIM3.py
+INFO 2019-02-27 09:23:57,212: 	 Finished importing CMSSW configuration step3_RAW2DIGI_L1Reco_RECO_RECOSIM3.py
+DEBUG 2019-02-27 09:23:57,212: 	 Writing CMSSW configuration to /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/inputs/PSet.py
+DEBUG 2019-02-27 09:24:01,608: 	 The following EDM output files will be collected: ['RECO3.root']
+DEBUG 2019-02-27 09:24:01,609: 	 The following TFile output files will be collected: []
+DEBUG 2019-02-27 09:24:01,609: 	 The following user output files will be collected: []
+DEBUG 2019-02-27 09:24:01,609: 	 Loading required information from the environment
+DEBUG 2019-02-27 09:24:01,609: 	 Found CMSSW_10_2_10 for slc6_amd64_gcc700 with base /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10
+DEBUG 2019-02-27 09:24:01,609: 	 Making tarball in /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/inputs/5ce524e2-ecd2-4a87-959f-e559d084df3fdefault.tgz
+DEBUG 2019-02-27 09:24:01,623: 	 Checking directory /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/lib
+DEBUG 2019-02-27 09:24:01,623: 	 Adding directory /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/lib to tarball
+DEBUG 2019-02-27 09:24:01,881: 	 Checking directory /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/biglib
+DEBUG 2019-02-27 09:24:01,881: 	 Adding directory /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/biglib to tarball
+DEBUG 2019-02-27 09:24:01,883: 	 Checking directory /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/module
+DEBUG 2019-02-27 09:24:03,073: 	 Adding data directory /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/RecoMuon/TrackerSeedGenerator/interface to tarball
+DEBUG 2019-02-27 09:24:04,634: 	 Uploading archive /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/inputs/5ce524e2-ecd2-4a87-959f-e559d084df3fdefault.tgz (1.726562.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2019-02-27 09:24:07,973: 	 Loading required information from the environment
+DEBUG 2019-02-27 09:24:07,973: 	 Found CMSSW_10_2_10 for slc6_amd64_gcc700 with base /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10
+DEBUG 2019-02-27 09:24:07,973: 	 Making tarball in /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/inputs/debugFiles.tgz
+DEBUG 2019-02-27 09:24:07,979: 	 Uploading archive /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2019-02-27 09:24:08,668: 	 Result uploading input files: be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz 
+INFO 2019-02-27 09:24:08,668: 	 Sending the request to the server
+DEBUG 2019-02-27 09:24:08,668: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 1, 'asyncdest': 'T3_US_FNALLPC', 'algoargs': 1, 'cachefilename': 'be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2500, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_10_2_10', 'edmoutfiles': ['RECO3.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW', 'lfn': '/store/user/bmahakud/ProduceRecoSample_v1', 'dryrun': 0, 'workflow': 'crab_ProduceRecoSample_v1', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 0, 'tfileoutfiles': [], 'oneEventMode': 0, 'debugfilename': '32f46221d4610df4ad0d89ebb92544f22dec9f5b0b0f68de5398cd0aa3d82859.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc700', 'totalunits': 1, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'ProduceRecoSample_v1'} 
+DEBUG 2019-02-27 09:24:08,669: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=1&asyncdest=T3_US_FNALLPC&algoargs=1&cachefilename=be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz&numcores=1&generator=pythia&maxmemory=2500&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_10_2_10&primarydataset=&inputdata=%2FJPsiToMuMu_Pt20to100-pythia8-gun%2FRunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1%2FGEN-SIM-RAW&lfn=%2Fstore%2Fuser%2Fbmahakud%2FProduceRecoSample_v1&dryrun=0&workflow=crab_ProduceRecoSample_v1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=32f46221d4610df4ad0d89ebb92544f22dec9f5b0b0f68de5398cd0aa3d82859.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc700&totalunits=1&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=ProduceRecoSample_v1&edmoutfiles=RECO3.root
+DEBUG 2019-02-27 09:24:09,432: 	 Result: {u'result': [{u'RequestName': u'190227_152409:bmahakud_crab_ProduceRecoSample_v1'}]}
+INFO 2019-02-27 09:24:09,436: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2019-02-27 09:24:09,436: 	 Task name: 190227_152409:bmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 09:24:09,436: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2019-02-27 09:24:09,436: 	 About to return
+INFO 2019-02-27 09:24:09,442: 	 Log file is /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/crab.log
+DEBUG 2019-02-27 09:29:48,084: 	 Executing command: 'status'
+DEBUG 2019-02-27 09:29:48,084: 	 Found CRAB cache file /uscms/home/bmahakud/.crab3
+DEBUG 2019-02-27 09:29:48,097: 	 Checking credentials
+DEBUG 2019-02-27 09:29:48,097: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 09:29:48,097: 	 Getting proxy life time left
+DEBUG 2019-02-27 09:29:48,201: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 42812
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:29:48,305: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 42811
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:29:48,306: 	 Proxy lifetime 42812 secs is different from voms extension lifetime 42811 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 09:29:48,306: 	 Proxy valid for 11:53:31 hours
+DEBUG 2019-02-27 09:29:48,420: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:29:48,420: 	 Checking credentials
+DEBUG 2019-02-27 09:29:48,420: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 09:29:48,420: 	 Getting proxy life time left
+DEBUG 2019-02-27 09:29:48,524: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 42812
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:29:48,628: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 42811
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:29:48,629: 	 Proxy lifetime 42812 secs is different from voms extension lifetime 42811 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 09:29:48,629: 	 Proxy valid for 11:53:31 hours
+DEBUG 2019-02-27 09:29:49,256: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-27 09:29:49,366: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:29:49,366: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-27 09:29:49,367: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-27 09:29:50,372: 	 Executing : 
+ command : myproxy-info -l 38cba6a83d31340888152db125f3085668ba8c76 -s myproxy.cern.ch
+ output : username: 38cba6a83d31340888152db125f3085668ba8c76
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 719:53:50  (30.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 09:29:50,374: 	 Myproxy is valid: 2591630
+DEBUG 2019-02-27 09:29:50,382: 	 Command use: status
+DEBUG 2019-02-27 09:29:50,383: 	 Options use: ['-d', 'ProduceRecoSample_v1/crab_ProduceRecoSample_v1/']
+DEBUG 2019-02-27 09:29:51,013: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-27 09:29:51,013: 	 Instance is prod
+DEBUG 2019-02-27 09:29:51,013: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-27 09:29:51,013: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-27 09:29:51,618: 	 Got information from server oracle database: {u'result': [u'190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-02-27 15:24:09.361712', u'None', u'2019-02-27 15:25:27.455375', u'None', u'CMSSW_10_2_10', u'slc6_amd64_gcc700', u'/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW', u'F', u'1', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'bmahakud', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud', u'cms', u'None', u'None', u'ProduceRecoSample_v1-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u'[]', u"['RECO3.root']", u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2500', u'10', u'None', u'[]', u'http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0196.cern.ch', u'F', u'[]', u'T', u'/store/user/bmahakud/ProduceRecoSample_v1', u'F', u'None', u'F', u'None', u'JPsiToMuMu_Pt20to100-pythia8-gun', u'None', u'32f46221d4610df4ad0d89ebb92544f22dec9f5b0b0f68de5398cd0aa3d82859.tar.gz', u'34070463', u'filetransfers', u'F', u'131.225.190.54', u'1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-02-27 09:29:51,619: 	 CRAB project directory:		/uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1
+INFO 2019-02-27 09:29:51,619: 	 Task name:			190227_152409:bmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 09:29:51,619: 	 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
+INFO 2019-02-27 09:29:51,619: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-02-27 09:29:51,619: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 09:29:51,619: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=bmahakud&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 09:29:51,620: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 34070463)
+DEBUG 2019-02-27 09:29:51,620: 	 Webdir is located at http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 09:29:52,250: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 09:29:52,250: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1/status_cache
+DEBUG 2019-02-27 09:29:52,855: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1551281158.0], 'JobIds': ['34070583.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}}
+INFO 2019-02-27 09:29:52,855: 	 Status on the scheduler:	SUBMITTED
+INFO 2019-02-27 09:29:52,855: 	 
+Jobs status:                    idle         		100.0% (1/1)
+INFO 2019-02-27 09:29:52,855: 	 
+No publication information available yet
+INFO 2019-02-27 09:29:52,968: 	 Log file is /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/crab.log
+DEBUG 2019-02-27 10:00:01,469: 	 Executing command: 'status'
+DEBUG 2019-02-27 10:00:01,469: 	 Found CRAB cache file /uscms/home/bmahakud/.crab3
+DEBUG 2019-02-27 10:00:01,490: 	 Checking credentials
+DEBUG 2019-02-27 10:00:01,490: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:00:01,490: 	 Getting proxy life time left
+DEBUG 2019-02-27 10:00:01,594: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 40999
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:00:01,699: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 40998
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:00:01,699: 	 Proxy lifetime 40999 secs is different from voms extension lifetime 40998 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:00:01,699: 	 Proxy valid for 11:23:18 hours
+DEBUG 2019-02-27 10:00:01,814: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:00:01,815: 	 Checking credentials
+DEBUG 2019-02-27 10:00:01,815: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:00:01,815: 	 Getting proxy life time left
+DEBUG 2019-02-27 10:00:01,919: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 40999
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:00:02,023: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 40998
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:00:02,023: 	 Proxy lifetime 40999 secs is different from voms extension lifetime 40998 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:00:02,024: 	 Proxy valid for 11:23:18 hours
+DEBUG 2019-02-27 10:00:02,635: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-27 10:00:02,745: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:00:02,746: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-27 10:00:02,746: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-27 10:00:03,852: 	 Executing : 
+ command : myproxy-info -l 38cba6a83d31340888152db125f3085668ba8c76 -s myproxy.cern.ch
+ output : username: 38cba6a83d31340888152db125f3085668ba8c76
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 719:23:37  (30.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:00:03,854: 	 Myproxy is valid: 2589817
+DEBUG 2019-02-27 10:00:03,855: 	 Command use: status
+DEBUG 2019-02-27 10:00:03,855: 	 Options use: ['-d', 'ProduceRecoSample_v1/crab_ProduceRecoSample_v1/']
+DEBUG 2019-02-27 10:00:04,460: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-27 10:00:04,460: 	 Instance is prod
+DEBUG 2019-02-27 10:00:04,460: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-27 10:00:04,460: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-27 10:00:05,062: 	 Got information from server oracle database: {u'result': [u'190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-02-27 15:24:09.361712', u'None', u'2019-02-27 15:25:27.455375', u'None', u'CMSSW_10_2_10', u'slc6_amd64_gcc700', u'/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW', u'F', u'1', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'bmahakud', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud', u'cms', u'None', u'None', u'ProduceRecoSample_v1-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u'[]', u"['RECO3.root']", u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2500', u'10', u'None', u'[]', u'http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0196.cern.ch', u'F', u'[]', u'T', u'/store/user/bmahakud/ProduceRecoSample_v1', u'F', u'None', u'F', u'None', u'JPsiToMuMu_Pt20to100-pythia8-gun', u'None', u'32f46221d4610df4ad0d89ebb92544f22dec9f5b0b0f68de5398cd0aa3d82859.tar.gz', u'34070463', u'filetransfers', u'F', u'131.225.190.54', u'1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-02-27 10:00:05,062: 	 CRAB project directory:		/uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1
+INFO 2019-02-27 10:00:05,063: 	 Task name:			190227_152409:bmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 10:00:05,063: 	 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
+INFO 2019-02-27 10:00:05,063: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-02-27 10:00:05,063: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 10:00:05,063: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=bmahakud&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 10:00:05,063: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 34070463)
+DEBUG 2019-02-27 10:00:05,063: 	 Webdir is located at http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 10:00:05,684: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 10:00:05,684: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1/status_cache
+DEBUG 2019-02-27 10:00:06,261: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [9.0, 186.51817989349365], 'StartTimes': [1551282864.0], 'SubmitTimes': [1551281158.0], 'JobIds': ['34070583.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [22548], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [0.0]}}
+INFO 2019-02-27 10:00:06,261: 	 Status on the scheduler:	SUBMITTED
+INFO 2019-02-27 10:00:06,261: 	 
+Jobs status:                    running      		100.0% (1/1)
+INFO 2019-02-27 10:00:06,261: 	 
+No publication information available yet
+INFO 2019-02-27 10:00:06,277: 	 Log file is /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/crab.log
+DEBUG 2019-02-27 10:37:26,783: 	 Executing command: 'status'
+DEBUG 2019-02-27 10:37:26,784: 	 Found CRAB cache file /uscms/home/bmahakud/.crab3
+DEBUG 2019-02-27 10:37:26,805: 	 Checking credentials
+DEBUG 2019-02-27 10:37:26,805: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:37:26,805: 	 Getting proxy life time left
+DEBUG 2019-02-27 10:37:26,909: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 38754
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:37:27,013: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 38753
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:37:27,013: 	 Proxy lifetime 38754 secs is different from voms extension lifetime 38753 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:37:27,014: 	 Proxy valid for 10:45:53 hours
+DEBUG 2019-02-27 10:37:27,127: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:37:27,128: 	 Checking credentials
+DEBUG 2019-02-27 10:37:27,128: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:37:27,128: 	 Getting proxy life time left
+DEBUG 2019-02-27 10:37:27,232: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 38753
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:37:27,336: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 38752
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:37:27,336: 	 Proxy lifetime 38753 secs is different from voms extension lifetime 38752 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:37:27,336: 	 Proxy valid for 10:45:52 hours
+DEBUG 2019-02-27 10:37:27,940: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-27 10:37:28,051: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:37:28,051: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-27 10:37:28,051: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-27 10:37:28,957: 	 Executing : 
+ command : myproxy-info -l 38cba6a83d31340888152db125f3085668ba8c76 -s myproxy.cern.ch
+ output : username: 38cba6a83d31340888152db125f3085668ba8c76
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 718:46:12  (29.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:37:28,958: 	 Myproxy is valid: 2587572
+DEBUG 2019-02-27 10:37:28,960: 	 Command use: status
+DEBUG 2019-02-27 10:37:28,960: 	 Options use: ['-d', 'ProduceRecoSample_v1/crab_ProduceRecoSample_v1/']
+DEBUG 2019-02-27 10:37:29,581: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-27 10:37:29,581: 	 Instance is prod
+DEBUG 2019-02-27 10:37:29,582: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-27 10:37:29,582: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-27 10:37:30,208: 	 Got information from server oracle database: {u'result': [u'190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-02-27 15:24:09.361712', u'None', u'2019-02-27 15:25:27.455375', u'None', u'CMSSW_10_2_10', u'slc6_amd64_gcc700', u'/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW', u'F', u'1', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'bmahakud', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud', u'cms', u'None', u'None', u'ProduceRecoSample_v1-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u'[]', u"['RECO3.root']", u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2500', u'10', u'None', u'[]', u'http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0196.cern.ch', u'F', u'[]', u'T', u'/store/user/bmahakud/ProduceRecoSample_v1', u'F', u'None', u'F', u'None', u'JPsiToMuMu_Pt20to100-pythia8-gun', u'None', u'32f46221d4610df4ad0d89ebb92544f22dec9f5b0b0f68de5398cd0aa3d82859.tar.gz', u'34070463', u'filetransfers', u'F', u'131.225.190.54', u'1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-02-27 10:37:30,208: 	 CRAB project directory:		/uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1
+INFO 2019-02-27 10:37:30,209: 	 Task name:			190227_152409:bmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 10:37:30,209: 	 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
+INFO 2019-02-27 10:37:30,209: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-02-27 10:37:30,209: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 10:37:30,209: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=bmahakud&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 10:37:30,209: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 34070463)
+DEBUG 2019-02-27 10:37:30,209: 	 Webdir is located at http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 10:37:30,895: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 10:37:30,895: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1/status_cache
+DEBUG 2019-02-27 10:37:31,470: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [9.0, 1512.0], 'StartTimes': [1551282864.0], 'SubmitTimes': [1551281158.0], 'JobIds': ['34070583.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1948368], 'TotalUserCpuTimeHistory': [628.0], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [24.0]}}
+INFO 2019-02-27 10:37:31,470: 	 Status on the scheduler:	SUBMITTED
+INFO 2019-02-27 10:37:31,470: 	 
+Jobs status:                    running      		100.0% (1/1)
+INFO 2019-02-27 10:37:31,470: 	 
+No publication information available yet
+INFO 2019-02-27 10:37:31,486: 	 Log file is /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/crab.log
+DEBUG 2019-02-27 10:55:39,571: 	 Executing command: 'status'
+DEBUG 2019-02-27 10:55:39,571: 	 Found CRAB cache file /uscms/home/bmahakud/.crab3
+DEBUG 2019-02-27 10:55:39,592: 	 Checking credentials
+DEBUG 2019-02-27 10:55:39,593: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:55:39,593: 	 Getting proxy life time left
+DEBUG 2019-02-27 10:55:39,697: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 37661
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:55:39,801: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 37660
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:55:39,802: 	 Proxy lifetime 37661 secs is different from voms extension lifetime 37660 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:55:39,802: 	 Proxy valid for 10:27:40 hours
+DEBUG 2019-02-27 10:55:39,916: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:55:39,917: 	 Checking credentials
+DEBUG 2019-02-27 10:55:39,917: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:55:39,917: 	 Getting proxy life time left
+DEBUG 2019-02-27 10:55:40,021: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 37661
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:55:40,125: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 37659
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:55:40,126: 	 Proxy lifetime 37661 secs is different from voms extension lifetime 37659 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 10:55:40,126: 	 Proxy valid for 10:27:39 hours
+DEBUG 2019-02-27 10:55:40,731: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-27 10:55:40,841: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:55:40,841: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-27 10:55:40,841: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-27 10:55:41,847: 	 Executing : 
+ command : myproxy-info -l 38cba6a83d31340888152db125f3085668ba8c76 -s myproxy.cern.ch
+ output : username: 38cba6a83d31340888152db125f3085668ba8c76
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 718:27:59  (29.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 10:55:41,848: 	 Myproxy is valid: 2586479
+DEBUG 2019-02-27 10:55:41,850: 	 Command use: status
+DEBUG 2019-02-27 10:55:41,850: 	 Options use: ['-d', 'ProduceRecoSample_v1/crab_ProduceRecoSample_v1/']
+DEBUG 2019-02-27 10:55:42,492: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-27 10:55:42,492: 	 Instance is prod
+DEBUG 2019-02-27 10:55:42,492: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-27 10:55:42,492: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-27 10:55:43,121: 	 Got information from server oracle database: {u'result': [u'190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-02-27 15:24:09.361712', u'None', u'2019-02-27 15:25:27.455375', u'None', u'CMSSW_10_2_10', u'slc6_amd64_gcc700', u'/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW', u'F', u'1', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'bmahakud', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud', u'cms', u'None', u'None', u'ProduceRecoSample_v1-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u'[]', u"['RECO3.root']", u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2500', u'10', u'None', u'[]', u'http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0196.cern.ch', u'F', u'[]', u'T', u'/store/user/bmahakud/ProduceRecoSample_v1', u'F', u'None', u'F', u'None', u'JPsiToMuMu_Pt20to100-pythia8-gun', u'None', u'32f46221d4610df4ad0d89ebb92544f22dec9f5b0b0f68de5398cd0aa3d82859.tar.gz', u'34070463', u'filetransfers', u'F', u'131.225.190.54', u'1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-02-27 10:55:43,121: 	 CRAB project directory:		/uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1
+INFO 2019-02-27 10:55:43,121: 	 Task name:			190227_152409:bmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 10:55:43,122: 	 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
+INFO 2019-02-27 10:55:43,122: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-02-27 10:55:43,122: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 10:55:43,122: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=bmahakud&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 10:55:43,122: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 34070463)
+DEBUG 2019-02-27 10:55:43,122: 	 Webdir is located at http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 10:55:43,746: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 10:55:43,746: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1/status_cache
+DEBUG 2019-02-27 10:55:44,320: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [9.0, 1512.0], 'StartTimes': [1551282864.0], 'SubmitTimes': [1551281158.0], 'JobIds': ['34070583.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1948368], 'TotalUserCpuTimeHistory': [628.0], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [24.0]}}
+INFO 2019-02-27 10:55:44,321: 	 Status on the scheduler:	SUBMITTED
+INFO 2019-02-27 10:55:44,321: 	 
+Jobs status:                    running      		100.0% (1/1)
+INFO 2019-02-27 10:55:44,321: 	 
+No publication information available yet
+INFO 2019-02-27 10:55:44,337: 	 Log file is /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/crab.log
+DEBUG 2019-02-27 12:28:06,058: 	 Executing command: 'status'
+DEBUG 2019-02-27 12:28:06,058: 	 Found CRAB cache file /uscms/home/bmahakud/.crab3
+DEBUG 2019-02-27 12:28:06,079: 	 Checking credentials
+DEBUG 2019-02-27 12:28:06,079: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 12:28:06,079: 	 Getting proxy life time left
+DEBUG 2019-02-27 12:28:06,183: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 32114
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 12:28:06,287: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 32113
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 12:28:06,287: 	 Proxy lifetime 32114 secs is different from voms extension lifetime 32113 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 12:28:06,287: 	 Proxy valid for 08:55:13 hours
+DEBUG 2019-02-27 12:28:06,401: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 12:28:06,401: 	 Checking credentials
+DEBUG 2019-02-27 12:28:06,401: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 12:28:06,401: 	 Getting proxy life time left
+DEBUG 2019-02-27 12:28:06,505: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 32114
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 12:28:06,608: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 32113
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 12:28:06,608: 	 Proxy lifetime 32114 secs is different from voms extension lifetime 32113 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 12:28:06,608: 	 Proxy valid for 08:55:13 hours
+DEBUG 2019-02-27 12:28:07,228: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-27 12:28:07,335: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 12:28:07,335: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-27 12:28:07,335: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-27 12:28:08,441: 	 Executing : 
+ command : myproxy-info -l 38cba6a83d31340888152db125f3085668ba8c76 -s myproxy.cern.ch
+ output : username: 38cba6a83d31340888152db125f3085668ba8c76
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 716:55:32  (29.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 12:28:08,443: 	 Myproxy is valid: 2580932
+DEBUG 2019-02-27 12:28:08,444: 	 Command use: status
+DEBUG 2019-02-27 12:28:08,444: 	 Options use: ['-d', 'ProduceRecoSample_v1/crab_ProduceRecoSample_v1/']
+DEBUG 2019-02-27 12:28:09,085: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-27 12:28:09,085: 	 Instance is prod
+DEBUG 2019-02-27 12:28:09,085: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-27 12:28:09,085: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-27 12:28:09,686: 	 Got information from server oracle database: {u'result': [u'190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-02-27 15:24:09.361712', u'None', u'2019-02-27 15:25:27.455375', u'None', u'CMSSW_10_2_10', u'slc6_amd64_gcc700', u'/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW', u'F', u'1', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'bmahakud', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud', u'cms', u'None', u'None', u'ProduceRecoSample_v1-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u'[]', u"['RECO3.root']", u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2500', u'10', u'None', u'[]', u'http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0196.cern.ch', u'F', u'[]', u'T', u'/store/user/bmahakud/ProduceRecoSample_v1', u'F', u'None', u'F', u'None', u'JPsiToMuMu_Pt20to100-pythia8-gun', u'None', u'32f46221d4610df4ad0d89ebb92544f22dec9f5b0b0f68de5398cd0aa3d82859.tar.gz', u'34070463', u'filetransfers', u'F', u'131.225.190.54', u'1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-02-27 12:28:09,686: 	 CRAB project directory:		/uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1
+INFO 2019-02-27 12:28:09,686: 	 Task name:			190227_152409:bmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 12:28:09,687: 	 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
+INFO 2019-02-27 12:28:09,687: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-02-27 12:28:09,687: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 12:28:09,687: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=bmahakud&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 12:28:09,687: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 34070463)
+DEBUG 2019-02-27 12:28:09,687: 	 Webdir is located at http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 12:28:10,300: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 12:28:10,300: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1/status_cache
+DEBUG 2019-02-27 12:28:10,876: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [9.0, 8424.0], 'StartTimes': [1551282864.0], 'SubmitTimes': [1551281158.0], 'JobIds': ['34070583.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1948368], 'TotalUserCpuTimeHistory': [7239.0], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [99.0]}}
+INFO 2019-02-27 12:28:10,877: 	 Status on the scheduler:	SUBMITTED
+INFO 2019-02-27 12:28:10,877: 	 
+Jobs status:                    running      		100.0% (1/1)
+INFO 2019-02-27 12:28:10,877: 	 
+No publication information available yet
+INFO 2019-02-27 12:28:10,892: 	 Log file is /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/crab.log
+DEBUG 2019-02-27 13:24:57,058: 	 Executing command: 'status'
+DEBUG 2019-02-27 13:24:57,059: 	 Found CRAB cache file /uscms/home/bmahakud/.crab3
+DEBUG 2019-02-27 13:24:57,112: 	 Checking credentials
+DEBUG 2019-02-27 13:24:57,113: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 13:24:57,113: 	 Getting proxy life time left
+DEBUG 2019-02-27 13:24:57,216: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 28703
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 13:24:57,320: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 28702
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 13:24:57,320: 	 Proxy lifetime 28703 secs is different from voms extension lifetime 28702 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 13:24:57,320: 	 Proxy valid for 07:58:22 hours
+DEBUG 2019-02-27 13:24:57,433: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 13:24:57,433: 	 Checking credentials
+DEBUG 2019-02-27 13:24:57,434: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 13:24:57,434: 	 Getting proxy life time left
+DEBUG 2019-02-27 13:24:57,536: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 28703
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 13:24:57,639: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 28702
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 13:24:57,640: 	 Proxy lifetime 28703 secs is different from voms extension lifetime 28702 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 13:24:57,640: 	 Proxy valid for 07:58:22 hours
+DEBUG 2019-02-27 13:24:58,243: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-27 13:24:58,353: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 13:24:58,354: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-27 13:24:58,354: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-27 13:24:59,760: 	 Executing : 
+ command : myproxy-info -l 38cba6a83d31340888152db125f3085668ba8c76 -s myproxy.cern.ch
+ output : username: 38cba6a83d31340888152db125f3085668ba8c76
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 715:58:41  (29.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 13:24:59,761: 	 Myproxy is valid: 2577521
+DEBUG 2019-02-27 13:24:59,762: 	 Command use: status
+DEBUG 2019-02-27 13:24:59,762: 	 Options use: ['-d', 'ProduceRecoSample_v1/crab_ProduceRecoSample_v1/']
+DEBUG 2019-02-27 13:25:00,396: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-27 13:25:00,396: 	 Instance is prod
+DEBUG 2019-02-27 13:25:00,396: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-27 13:25:00,396: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-27 13:25:01,033: 	 Got information from server oracle database: {u'result': [u'190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-02-27 15:24:09.361712', u'None', u'2019-02-27 15:25:27.455375', u'None', u'CMSSW_10_2_10', u'slc6_amd64_gcc700', u'/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW', u'F', u'1', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'bmahakud', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud', u'cms', u'None', u'None', u'ProduceRecoSample_v1-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u'[]', u"['RECO3.root']", u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2500', u'10', u'None', u'[]', u'http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0196.cern.ch', u'F', u'[]', u'T', u'/store/user/bmahakud/ProduceRecoSample_v1', u'F', u'None', u'F', u'None', u'JPsiToMuMu_Pt20to100-pythia8-gun', u'None', u'32f46221d4610df4ad0d89ebb92544f22dec9f5b0b0f68de5398cd0aa3d82859.tar.gz', u'34070463', u'filetransfers', u'F', u'131.225.190.54', u'1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-02-27 13:25:01,033: 	 CRAB project directory:		/uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1
+INFO 2019-02-27 13:25:01,034: 	 Task name:			190227_152409:bmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 13:25:01,034: 	 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
+INFO 2019-02-27 13:25:01,034: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-02-27 13:25:01,034: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 13:25:01,034: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=bmahakud&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 13:25:01,034: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 34070463)
+DEBUG 2019-02-27 13:25:01,034: 	 Webdir is located at http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 13:25:01,641: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 13:25:01,641: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1/status_cache
+DEBUG 2019-02-27 13:25:02,210: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [9.0, 11728.0], 'StartTimes': [1551282864.0], 'SubmitTimes': [1551281158.0], 'JobIds': ['34070583.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1948368], 'TotalUserCpuTimeHistory': [10406.0], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [136.0]}}
+INFO 2019-02-27 13:25:02,210: 	 Status on the scheduler:	SUBMITTED
+INFO 2019-02-27 13:25:02,211: 	 
+Jobs status:                    running      		100.0% (1/1)
+INFO 2019-02-27 13:25:02,211: 	 
+No publication information available yet
+INFO 2019-02-27 13:25:02,222: 	 Log file is /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/crab.log
+DEBUG 2019-02-27 14:07:34,785: 	 Executing command: 'status'
+DEBUG 2019-02-27 14:07:34,786: 	 Found CRAB cache file /uscms/home/bmahakud/.crab3
+DEBUG 2019-02-27 14:07:34,812: 	 Checking credentials
+DEBUG 2019-02-27 14:07:34,812: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 14:07:34,812: 	 Getting proxy life time left
+DEBUG 2019-02-27 14:07:34,916: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 26146
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 14:07:35,021: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 26145
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 14:07:35,021: 	 Proxy lifetime 26146 secs is different from voms extension lifetime 26145 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 14:07:35,021: 	 Proxy valid for 07:15:45 hours
+DEBUG 2019-02-27 14:07:35,136: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 14:07:35,136: 	 Checking credentials
+DEBUG 2019-02-27 14:07:35,137: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 14:07:35,137: 	 Getting proxy life time left
+DEBUG 2019-02-27 14:07:35,240: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 26145
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 14:07:35,345: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 26144
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 14:07:35,345: 	 Proxy lifetime 26145 secs is different from voms extension lifetime 26144 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 14:07:35,345: 	 Proxy valid for 07:15:44 hours
+DEBUG 2019-02-27 14:07:35,960: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-27 14:07:36,070: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 14:07:36,070: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-27 14:07:36,070: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-27 14:07:37,076: 	 Executing : 
+ command : myproxy-info -l 38cba6a83d31340888152db125f3085668ba8c76 -s myproxy.cern.ch
+ output : username: 38cba6a83d31340888152db125f3085668ba8c76
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 715:16:03  (29.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 14:07:37,078: 	 Myproxy is valid: 2574963
+DEBUG 2019-02-27 14:07:37,079: 	 Command use: status
+DEBUG 2019-02-27 14:07:37,080: 	 Options use: ['-d', 'ProduceRecoSample_v1/crab_ProduceRecoSample_v1/']
+DEBUG 2019-02-27 14:07:37,720: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-27 14:07:37,720: 	 Instance is prod
+DEBUG 2019-02-27 14:07:37,720: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-27 14:07:37,720: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-27 14:07:38,346: 	 Got information from server oracle database: {u'result': [u'190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-02-27 15:24:09.361712', u'None', u'2019-02-27 15:25:27.455375', u'None', u'CMSSW_10_2_10', u'slc6_amd64_gcc700', u'/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW', u'F', u'1', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'bmahakud', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud', u'cms', u'None', u'None', u'ProduceRecoSample_v1-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u'[]', u"['RECO3.root']", u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2500', u'10', u'None', u'[]', u'http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0196.cern.ch', u'F', u'[]', u'T', u'/store/user/bmahakud/ProduceRecoSample_v1', u'F', u'None', u'F', u'None', u'JPsiToMuMu_Pt20to100-pythia8-gun', u'None', u'32f46221d4610df4ad0d89ebb92544f22dec9f5b0b0f68de5398cd0aa3d82859.tar.gz', u'34070463', u'filetransfers', u'F', u'131.225.190.54', u'1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-02-27 14:07:38,346: 	 CRAB project directory:		/uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1
+INFO 2019-02-27 14:07:38,346: 	 Task name:			190227_152409:bmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 14:07:38,347: 	 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
+INFO 2019-02-27 14:07:38,347: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-02-27 14:07:38,347: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 14:07:38,347: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=bmahakud&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 14:07:38,347: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 34070463)
+DEBUG 2019-02-27 14:07:38,347: 	 Webdir is located at http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 14:07:39,028: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 14:07:39,028: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1/status_cache
+DEBUG 2019-02-27 14:07:39,614: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [9.0, 13530.0], 'StartTimes': [1551282864.0], 'SubmitTimes': [1551281158.0], 'JobIds': ['34070583.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1948368], 'TotalUserCpuTimeHistory': [12130.0], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [155.0]}}
+INFO 2019-02-27 14:07:39,615: 	 Status on the scheduler:	SUBMITTED
+INFO 2019-02-27 14:07:39,615: 	 
+Jobs status:                    running      		100.0% (1/1)
+INFO 2019-02-27 14:07:39,615: 	 
+No publication information available yet
+INFO 2019-02-27 14:07:39,631: 	 Log file is /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/crab.log
+DEBUG 2019-02-27 17:18:22,148: 	 Executing command: 'status'
+DEBUG 2019-02-27 17:18:22,162: 	 Found CRAB cache file /uscms/home/bmahakud/.crab3
+DEBUG 2019-02-27 17:18:22,190: 	 Checking credentials
+DEBUG 2019-02-27 17:18:22,197: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 17:18:22,197: 	 Getting proxy life time left
+DEBUG 2019-02-27 17:18:22,300: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 14698
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 17:18:22,404: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 14697
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 17:18:22,405: 	 Proxy lifetime 14698 secs is different from voms extension lifetime 14697 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 17:18:22,405: 	 Proxy valid for 04:04:57 hours
+DEBUG 2019-02-27 17:18:22,521: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 17:18:22,521: 	 Checking credentials
+DEBUG 2019-02-27 17:18:22,522: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 17:18:22,522: 	 Getting proxy life time left
+DEBUG 2019-02-27 17:18:22,625: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 14698
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 17:18:22,729: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 14697
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 17:18:22,729: 	 Proxy lifetime 14698 secs is different from voms extension lifetime 14697 secs for proxy: /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 17:18:22,729: 	 Proxy valid for 04:04:57 hours
+DEBUG 2019-02-27 17:18:23,365: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-27 17:18:23,472: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem DEBUG 2019-02-27 18:13:22,754: 	 Executing command: 'status'
+DEBUG 2019-02-27 18:13:22,754: 	 Found CRAB cache file /uscms/home/bmahakud/.crab3
+DEBUG 2019-02-27 18:13:22,788: 	 Checking credentials
+DEBUG 2019-02-27 18:13:22,789: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 18:13:22,789: 	 Getting proxy life time left
+DEBUG 2019-02-27 18:13:22,892: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 43162
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 18:13:22,996: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 43162
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 18:13:22,997: 	 Proxy valid for 11:59:22 hours
+DEBUG 2019-02-27 18:13:23,111: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 18:13:23,111: 	 Checking credentials
+DEBUG 2019-02-27 18:13:23,112: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-27 18:13:23,112: 	 Getting proxy life time left
+DEBUG 2019-02-27 18:13:23,215: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 43161
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 18:13:23,320: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 43161
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 18:13:23,320: 	 Proxy valid for 11:59:21 hours
+DEBUG 2019-02-27 18:13:23,939: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-27 18:13:24,051: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 18:13:24,051: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-27 18:13:24,052: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-27 18:13:25,258: 	 Executing : 
+ command : myproxy-info -l 38cba6a83d31340888152db125f3085668ba8c76 -s myproxy.cern.ch
+ output : username: 38cba6a83d31340888152db125f3085668ba8c76
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 711:10:15  (29.6 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-27 18:13:25,259: 	 Myproxy is valid: 2560215
+DEBUG 2019-02-27 18:13:25,261: 	 Command use: status
+DEBUG 2019-02-27 18:13:25,261: 	 Options use: ['-d', 'ProduceRecoSample_v1/crab_ProduceRecoSample_v1/']
+DEBUG 2019-02-27 18:13:25,853: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-27 18:13:25,853: 	 Instance is prod
+DEBUG 2019-02-27 18:13:25,853: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-27 18:13:25,853: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-27 18:13:26,446: 	 Got information from server oracle database: {u'result': [u'190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-02-27 15:24:09.361712', u'None', u'2019-02-27 15:25:27.455375', u'None', u'CMSSW_10_2_10', u'slc6_amd64_gcc700', u'/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW', u'F', u'1', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'bmahakud', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud', u'cms', u'None', u'None', u'ProduceRecoSample_v1-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u'[]', u"['RECO3.root']", u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2500', u'10', u'None', u'[]', u'http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0196.cern.ch', u'F', u'[]', u'T', u'/store/user/bmahakud/ProduceRecoSample_v1', u'F', u'None', u'F', u'None', u'JPsiToMuMu_Pt20to100-pythia8-gun', u'None', u'32f46221d4610df4ad0d89ebb92544f22dec9f5b0b0f68de5398cd0aa3d82859.tar.gz', u'34070463', u'filetransfers', u'F', u'131.225.190.54', u'1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-02-27 18:13:26,446: 	 CRAB project directory:		/uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1
+INFO 2019-02-27 18:13:26,447: 	 Task name:			190227_152409:bmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 18:13:26,447: 	 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
+INFO 2019-02-27 18:13:26,447: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-02-27 18:13:26,447: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-27 18:13:26,447: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=bmahakud&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 18:13:26,447: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 34070463)
+DEBUG 2019-02-27 18:13:26,447: 	 Webdir is located at http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 18:13:27,037: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-27 18:13:27,037: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1/status_cache
+DEBUG 2019-02-27 18:13:27,599: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [9.0, 28863.0], 'StartTimes': [1551282864.0], 'SubmitTimes': [1551281158.0], 'JobIds': ['34070583.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1948368], 'TotalUserCpuTimeHistory': [26833.0], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [309.0]}}
+INFO 2019-02-27 18:13:27,599: 	 Status on the scheduler:	SUBMITTED
+INFO 2019-02-27 18:13:27,600: 	 
+Jobs status:                    running      		100.0% (1/1)
+INFO 2019-02-27 18:13:27,600: 	 
+No publication information available yet
+INFO 2019-02-27 18:13:27,616: 	 Log file is /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/crab.log
+DEBUG 2019-02-28 02:25:04,923: 	 Executing command: 'status'
+DEBUG 2019-02-28 02:25:04,928: 	 Found CRAB cache file /uscms/home/bmahakud/.crab3
+DEBUG 2019-02-28 02:25:04,941: 	 Checking credentials
+DEBUG 2019-02-28 02:25:04,941: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-28 02:25:04,941: 	 Getting proxy life time left
+DEBUG 2019-02-28 02:25:05,045: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 26540
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-28 02:25:05,149: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 26540
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-28 02:25:05,149: 	 Proxy valid for 07:22:20 hours
+DEBUG 2019-02-28 02:25:05,264: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-28 02:25:05,264: 	 Checking credentials
+DEBUG 2019-02-28 02:25:05,264: 	 Found proxy file /uscms/home/bmahakud/x509up_u48295
+DEBUG 2019-02-28 02:25:05,265: 	 Getting proxy life time left
+DEBUG 2019-02-28 02:25:05,368: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -timeleft
+ output : 26540
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-28 02:25:05,472: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/bmahakud/x509up_u48295 -actimeleft
+ output : 26540
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-28 02:25:05,473: 	 Proxy valid for 07:22:20 hours
+DEBUG 2019-02-28 02:25:06,076: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-28 02:25:06,186: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-28 02:25:06,186: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-28 02:25:06,186: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud_cmsweb.cern.ch for credential name
+DEBUG 2019-02-28 02:25:07,292: 	 Executing : 
+ command : myproxy-info -l 38cba6a83d31340888152db125f3085668ba8c76 -s myproxy.cern.ch
+ output : username: 38cba6a83d31340888152db125f3085668ba8c76
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 702:58:33  (29.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-28 02:25:07,294: 	 Myproxy is valid: 2530713
+DEBUG 2019-02-28 02:25:07,295: 	 Command use: status
+DEBUG 2019-02-28 02:25:07,296: 	 Options use: ['-d', 'ProduceRecoSample_v1/crab_ProduceRecoSample_v1/']
+DEBUG 2019-02-28 02:25:08,461: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-28 02:25:08,461: 	 Instance is prod
+DEBUG 2019-02-28 02:25:08,461: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-28 02:25:08,461: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-28 02:25:09,049: 	 Got information from server oracle database: {u'result': [u'190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-02-27 15:24:09.361712', u'None', u'2019-02-27 15:25:27.455375', u'None', u'CMSSW_10_2_10', u'slc6_amd64_gcc700', u'/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW', u'F', u'1', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'be0e26687b31db6c36f7006aaa4ccf8d4976226656ef494c73afcff009c0a1b7.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'bmahakud', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bmahakud/CN=739938/CN=Bibhuprasad Mahakud', u'cms', u'None', u'None', u'ProduceRecoSample_v1-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u'[]', u"['RECO3.root']", u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2500', u'10', u'None', u'[]', u'http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0196.cern.ch', u'F', u'[]', u'T', u'/store/user/bmahakud/ProduceRecoSample_v1', u'F', u'None', u'F', u'None', u'JPsiToMuMu_Pt20to100-pythia8-gun', u'None', u'32f46221d4610df4ad0d89ebb92544f22dec9f5b0b0f68de5398cd0aa3d82859.tar.gz', u'34070463', u'filetransfers', u'F', u'131.225.190.54', u'1.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-02-28 02:25:09,050: 	 CRAB project directory:		/uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1
+INFO 2019-02-28 02:25:09,050: 	 Task name:			190227_152409:bmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-28 02:25:09,050: 	 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
+INFO 2019-02-28 02:25:09,050: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-02-28 02:25:09,050: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+INFO 2019-02-28 02:25:09,050: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=bmahakud&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=190227_152409%3Abmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-28 02:25:09,050: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 34070463)
+DEBUG 2019-02-28 02:25:09,050: 	 Webdir is located at http://vocms0196.cern.ch/mon/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-28 02:25:09,718: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1
+DEBUG 2019-02-28 02:25:09,718: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0196/cms644/190227_152409:bmahakud_crab_ProduceRecoSample_v1/status_cache
+DEBUG 2019-02-28 02:25:10,289: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [9.0, 51400.0], 'StartTimes': [1551282864.0], 'SubmitTimes': [1551281158.0], 'JobIds': ['34070583.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [1948560], 'TotalUserCpuTimeHistory': [48458.0], 'SiteHistory': ['Unknown', 'T2_IN_TIFR'], 'TotalSysCpuTimeHistory': [547.0]}}
+INFO 2019-02-28 02:25:10,289: 	 Status on the scheduler:	SUBMITTED
+INFO 2019-02-28 02:25:10,290: 	 
+Jobs status:                    running      		100.0% (1/1)
+INFO 2019-02-28 02:25:10,290: 	 
+No publication information available yet
+INFO 2019-02-28 02:25:10,306: 	 Log file is /uscms_data/d3/bmahakud/PostDocWork/MuonHLT/SetupForHLTNote/GlobalSetupForPaper/CMSSW_10_2_10/src/MuonHLTNtuples/Tools/Samples/ProduceRecoSample_v1/crab_ProduceRecoSample_v1/crab.log

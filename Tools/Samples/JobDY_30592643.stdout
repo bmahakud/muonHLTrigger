@@ -1,0 +1,48 @@
+Starting job on  Thu Feb 28 18:28:43 UTC 2019
+Running on  Linux bmahakud-30592643-0-cmswn1832.fnal.gov 3.10.0-957.1.3.el7.x86_64 #1 SMP Mon Nov 26 12:36:06 CST 2018 x86_64 x86_64 x86_64 GNU/Linux
+System release  Scientific Linux release 6.10 (Carbon)
+CMSSW on Condor
+
+parameter set:
+CMSSWVER:   CMSSW_10_2_10
+OUTDIR:     root://cmseos.fnal.gov//store/user/bmahakud/BoostedJpsiRECOFiles
+/storage/local/data1/condor/execute/dir_8441
+28-Feb-2019 18:32:55 UTC  Initiating request to open file root://cmsxrootd-site.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root
+%MSG-w XrdAdaptorInternal:  file_open 28-Feb-2019 18:35:42 UTC pre-events
+Failed to open file at URL root://cmsxrootd-site.fnal.gov:1094//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root.
+%MSG
+%MSG-w XrdAdaptorInternal:  file_open 28-Feb-2019 18:36:00 UTC pre-events
+Failed to open file at URL root://cmsxrootd-site.fnal.gov:1094//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root?tried=.
+%MSG
+28-Feb-2019 18:36:00 UTC  Fallback request to file root://cmsxrootd.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root
+%MSG-w XrdAdaptorInternal:  file_open 28-Feb-2019 18:36:39 UTC pre-events
+Failed to open file at URL root://se01.indiacms.res.in:11001//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root?tried=+1213cmsxrootd2.fnal.gov1213xrootd.unl.edu.
+%MSG
+%MSG-w XrdAdaptorInternal:  file_open 28-Feb-2019 18:36:40 UTC pre-events
+Failed to open file at URL root://se01.indiacms.res.in:11001//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root?tried=+1213cmsxrootd2.fnal.gov1213xrootd.unl.edu,.
+%MSG
+----- Begin Fatal Exception 28-Feb-2019 18:36:40 UTC-----------------------
+An exception of category 'FallbackFileOpenError' occurred while
+   [0] Constructing the EventProcessor
+   [1] Constructing input source of type PoolSource
+   [2] Calling RootFileSequenceBase::initTheFile()
+   [3] Calling StorageFactory::open()
+   [4] Calling XrdFile::open()
+Exception Message:
+Failed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root'
+   Additional Info:
+      [a] XrdCl::File::Open(name='root://cmsxrootd-site.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] No servers are available to read the file.
+' (errno=3011, code=400). No additional data servers were found.
+      [b] Last URL tried: root://cmsxrootd-site.fnal.gov:1094//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root?tried=
+      [c] Problematic data server: cmsxrootd-site.fnal.gov:1094
+      [d] Disabled source: cmsxrootd-site.fnal.gov:1094
+      [e] Input file root://cmsxrootd-site.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root could not be opened.
+Fallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root also could not be opened.
+Original exception info is above; fallback exception info is below.
+      [f] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3010] Permission denied
+' (errno=3010, code=400). No additional data servers were found.
+      [g] Last URL tried: root://se01.indiacms.res.in:11001//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/524B61BB-EA47-F442-A7B5-9C7F8D2621F9.root?tried=+1213cmsxrootd2.fnal.gov1213xrootd.unl.edu,
+      [h] Problematic data server: se01.indiacms.res.in:11001
+      [i] Disabled source: se01.indiacms.res.in:11001
+----- End Fatal Exception -------------------------------------------------
+exit code 92, skipping xrdcp

@@ -1,0 +1,17 @@
+universe = vanilla
+Executable = jobExecCondor.sh
+Requirements = OpSys == "LINUX" && (Arch != "DUMMY" )
+request_disk = 10000000
+request_memory = 3100
+Should_Transfer_Files = YES
+WhenToTransferOutput = ON_EXIT_OR_EVICT
+Transfer_Input_Files = jobExecCondor.sh,CMSSW_10_2_10.tar.gz,step3_RAW2DIGI_L1Reco_RECO_RECOSIM.py
+Output = JobDY_$(Cluster).stdout
+Error = JobDY_$(Cluster).stderr
+Log = JobDY_$(Cluster).condor
+notification = Never
+x509userproxy = $ENV(X509_USER_PROXY)
+Arguments = CMSSW_10_2_10 root://cmseos.fnal.gov//store/user/bmahakud/BoostedJpsiRECOFiles 
+on_exit_remove = (ExitBySignal == False) && (ExitCode == 0)
+on_exit_hold = (NumJobStarts > 2) && ( (ExitBySignal == True) || (ExitCode != 0) )
+Queue 1

@@ -1,0 +1,13 @@
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/F103BD2C-8B71-EE40-B7EA-47387C78E19B.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/42D188BA-0D7B-6741-B844-8E1039E6E921.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/D4C9E4CB-02AA-EB49-BB3F-1277D5E4E0C8.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/DB67EE72-C4D2-054A-AB5B-552E645EEF41.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/76610B84-93E2-D74B-AD31-DE66995B355F.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/589319D3-ED32-4D4B-8553-4E0F7979EB94.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/10FABF1E-F2E6-2D4C-B043-37EB34B998E1.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/9EB3382B-7721-6745-9E17-D4BEB7DAB6F7.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/2D2AC30F-4C31-1244-AAB5-5D96D3D86B3A.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/EF791D2E-C6E5-0D45-A058-926EDE72B0C5.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/0659056C-6A15-8D42-94AB-3AA509BA992C.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/80F7F40A-26FE-3545-A7C7-6EBF0B2D4CB4.root
+/store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/AODSIM/102X_upgrade2018_realistic_v15_ext1-v1/110000/37FC18F9-0E57-394F-A1B9-9DAFCF432E3E.root

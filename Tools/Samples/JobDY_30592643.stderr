@@ -1,0 +1,2 @@
+./condor_exec.exe: line 23: scram: command not found
+rm: cannot remove `*.root': No such file or directory

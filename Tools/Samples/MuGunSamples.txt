@@ -1,0 +1,15 @@
+/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW
+/JPsiToMuMu_Pt20to100-pythia8-gun/RunIIFall18DRPremix-102X_upgrade2018_realistic_v11_ext1-v1/GEN-SIM-RAW
+/JPsiToMuMu_Pt20to120_EtaPhiRestricted-pythia8-gun/RunIIAutumn18DR-FlatPU28to62NZS_102X_upgrade2018_realistic_v15_ext1-v2/GEN-SIM-RAW
+/Muminus_Pt10-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW
+/Muminus_Pt10-gun/RunIIFall18DRPremix-102X_upgrade2018_realistic_v11_ext1-v1/GEN-SIM-RAW
+/Muminus_Pt100-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW
+/Muminus_Pt100-gun/RunIIFall18DRPremix-102X_upgrade2018_realistic_v11_ext1-v1/GEN-SIM-RAW
+/Muminus_Pt1000-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW
+/Muminus_Pt1000-gun/RunIIFall18DRPremix-102X_upgrade2018_realistic_v11_ext1-v1/GEN-SIM-RAW
+/Muplus_Pt10-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW
+/Muplus_Pt10-gun/RunIIFall18DRPremix-102X_upgrade2018_realistic_v11_ext1-v1/GEN-SIM-RAW
+/Muplus_Pt100-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW
+/Muplus_Pt100-gun/RunIIFall18DRPremix-102X_upgrade2018_realistic_v11_ext1-v1/GEN-SIM-RAW
+/Muplus_Pt1000-gun/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15_ext1-v1/GEN-SIM-RAW
+/Muplus_Pt1000-gun/RunIIFall18DRPremix-102X_upgrade2018_realistic_v11_ext1-v1/GEN-SIM-RAW

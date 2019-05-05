@@ -1,0 +1,226 @@
+Starting job on  Thu Feb 21 09:20:48 UTC 2019
+Running on  Linux bmahakud-60500138-0-cmswn2054.fnal.gov 4.19.2-1.el7.elrepo.x86_64 #1 SMP Tue Nov 13 16:18:09 EST 2018 x86_64 x86_64 x86_64 GNU/Linux
+System release  Scientific Linux release 6.10 (Carbon)
+CMSSW on Condor
+
+parameter set:
+CMSSWVER:   CMSSW_10_2_10
+OUTDIR:     root://cmseos.fnal.gov//store/user/bmahakud/BoostedJpsiRECOFiles
+/storage/local/data1/condor/execute/dir_16352
+21-Feb-2019 09:26:11 UTC  Initiating request to open file root://cmsxrootd-site.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/7CCCA118-8F63-2041-967A-9AEDAE077803.root
+%MSG-w XrdAdaptorInternal:  file_open 21-Feb-2019 09:26:13 UTC pre-events
+Failed to open file at URL root://cmsxrootd-site.fnal.gov:1094//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/7CCCA118-8F63-2041-967A-9AEDAE077803.root.
+%MSG
+%MSG-w XrdAdaptorInternal:  file_open 21-Feb-2019 09:26:13 UTC pre-events
+Failed to open file at URL root://cmsxrootd-site.fnal.gov:1094//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/7CCCA118-8F63-2041-967A-9AEDAE077803.root?tried=.
+%MSG
+21-Feb-2019 09:26:13 UTC  Fallback request to file root://cmsxrootd.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/7CCCA118-8F63-2041-967A-9AEDAE077803.root
+%MSG-w XrdAdaptor:  file_open 21-Feb-2019 09:26:20 UTC pre-events
+Data is served from indiacms.res.in instead of original site US-Regional-Nebraska
+%MSG
+21-Feb-2019 09:26:26 UTC  Successfully opened file root://cmsxrootd.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/7CCCA118-8F63-2041-967A-9AEDAE077803.root
+%MSG-e TkDetLayers:   ConversionTrackCandidateProducer:uncleanedOnlyConversionTrackCandidates@streamBeginRun  21-Feb-2019 12:17:10 UTC Run: 1 Stream: 0
+ ForwardDiskSectorBuilderFromDet: Trying to build Petal Wedge from Dets at different z positions !! Delta_z = -0.950417
+%MSG
+Begin processing the 1st record. Run 1, Event 88003, LumiSection 89 on stream 0 at 21-Feb-2019 12:17:32.408 UTC
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 21-Feb-2019 12:28:56 UTC  Run: 1 Event: 88048
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 12:28:56 UTC Run: 1 Event: 88048
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 12:28:56 UTC Run: 1 Event: 88048
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 12:28:56 UTC Run: 1 Event: 88048
+     Failed to load tracker track trajectory
+%MSG
+[2019-02-21 12:37:04.756898 +0000][Error  ][AsyncSock         ] [llrxrd-redir.in2p3.fr:1094 #0.0] Socket error encountered: [ERROR] Socket error: Resource temporarily unavailable
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 21-Feb-2019 12:44:17 UTC  Run: 1 Event: 88116
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 12:44:17 UTC Run: 1 Event: 88116
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 12:44:17 UTC Run: 1 Event: 88116
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 12:44:17 UTC Run: 1 Event: 88116
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 21-Feb-2019 12:46:45 UTC  Run: 1 Event: 88128
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 12:46:45 UTC Run: 1 Event: 88128
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 12:46:45 UTC Run: 1 Event: 88128
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 12:46:45 UTC Run: 1 Event: 88128
+     Failed to load tracker track trajectory
+%MSG
+Begin processing the 201st record. Run 1, Event 88189, LumiSection 89 on stream 0 at 21-Feb-2019 13:02:39.167 UTC
+%MSG-w Muon:  GlobalMuonProducer:displacedGlobalMuons 21-Feb-2019 13:04:35 UTC  Run: 1 Event: 88214
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w RecoMuon:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 13:04:35 UTC Run: 1 Event: 88214
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalMuon:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 13:04:35 UTC Run: 1 Event: 88214
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w GlobalTrajectoryBuilderBase:  GlobalMuonProducer:displacedGlobalMuons  21-Feb-2019 13:04:35 UTC Run: 1 Event: 88214
+     Failed to load tracker track trajectory
+%MSG
+%MSG-w PFTrackTransformer:  PFTrackProducer:pfTrack 21-Feb-2019 13:08:22 UTC  Run: 1 Event: 88227
+KF TRACK Reco track charge = 1, type = 1, Pt = 150.212, P = 1630.6
+	R0 = 0.095807 Z0 = -9.59026
+	number of tracker measurements = 0
+	number of points total = 4
+Traj point id = -1, layer = 0, Eta,Phi = -5.29934,1.84224, X,Y = -0.0256877,0.0922991, R,Z = 0.095807,-9.59026, E,Pt = 1630.6,150.212
+Traj point id = -1, layer = 1, Eta,Phi = 2.61862,0.662931, X,Y = 1.97048,1.53857, R,Z = 2.5,17.0548, E,Pt = 1630.6,150.212
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+ PROPAGATION TO THE ECAL HAS FAILED
+%MSG
+%MSG-w PFTrackTransformer:  PFTrackProducer:pfTrack 21-Feb-2019 13:08:22 UTC  Run: 1 Event: 88227
+KF TRACK Reco track charge = 1, type = 1, Pt = 150.212, P = 1630.6
+	R0 = 0.095807 Z0 = -9.59026
+	number of tracker measurements = 0
+	number of points total = 6
+Traj point id = -1, layer = 0, Eta,Phi = -5.29934,1.84224, X,Y = -0.0256877,0.0922991, R,Z = 0.095807,-9.59026, E,Pt = 1630.6,150.212
+Traj point id = -1, layer = 1, Eta,Phi = 2.61862,0.662931, X,Y = 1.97048,1.53857, R,Z = 2.5,17.0548, E,Pt = 1630.6,150.212
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+ PROPAGATION TO THE HCAL ENTRANCE HAS FAILED
+%MSG
+%MSG-w PFTrackTransformer:  PFTrackProducer:uncleanedOnlyPfTrack  21-Feb-2019 13:08:23 UTC Run: 1 Event: 88227
+KF TRACK Reco track charge = 1, type = 1, Pt = 150.212, P = 1630.6
+	R0 = 0.095807 Z0 = -9.59026
+	number of tracker measurements = 0
+	number of points total = 4
+Traj point id = -1, layer = 0, Eta,Phi = -5.29934,1.84224, X,Y = -0.0256877,0.0922991, R,Z = 0.095807,-9.59026, E,Pt = 1630.6,150.212
+Traj point id = -1, layer = 1, Eta,Phi = 2.61862,0.662931, X,Y = 1.97048,1.53857, R,Z = 2.5,17.0548, E,Pt = 1630.6,150.212
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+ PROPAGATION TO THE ECAL HAS FAILED
+%MSG
+%MSG-w PFTrackTransformer:  PFTrackProducer:uncleanedOnlyPfTrack  21-Feb-2019 13:08:23 UTC Run: 1 Event: 88227
+KF TRACK Reco track charge = 1, type = 1, Pt = 150.212, P = 1630.6
+	R0 = 0.095807 Z0 = -9.59026
+	number of tracker measurements = 0
+	number of points total = 6
+Traj point id = -1, layer = 0, Eta,Phi = -5.29934,1.84224, X,Y = -0.0256877,0.0922991, R,Z = 0.095807,-9.59026, E,Pt = 1630.6,150.212
+Traj point id = -1, layer = 1, Eta,Phi = 2.61862,0.662931, X,Y = 1.97048,1.53857, R,Z = 2.5,17.0548, E,Pt = 1630.6,150.212
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+Traj point id = -1, layer = -1, Eta,Phi = 0,0, X,Y = 0,0, R,Z = 0,0, E,Pt = 0,0
+ PROPAGATION TO THE HCAL ENTRANCE HAS FAILED
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:pixelPairStepTracks  21-Feb-2019 13:27:20 UTC Run: 1 Event: 88310
+curv error not pos-def
+[       169167      1.4859    -15857.5    -18.1126    -4.42483
+        1.4859 0.000646868   -0.139292-0.000199009   0.0103595
+      -15857.5   -0.139292     1486.46     1.69725     0.41468
+      -18.1126-0.000199009     1.69725 -0.00288008 -0.00017778
+      -4.42483   0.0103595     0.41468 -0.00017778    0.170715 ]
+pos/mom/mf  (-9.7692,4.44276,20.2247)   (-52.7506,23.67,104.51)   (-0.000396573,0.00018035,3.81061) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:pixelPairStepTracks  21-Feb-2019 13:27:20 UTC Run: 1 Event: 88310
+local error not pos-def
+[       169167     15921.6     1815.97    -18.1487     7.07856
+       15921.6     1498.49     170.915    -1.70749    0.666146
+       1815.97     170.915     19.5057   -0.194922  -0.0159072
+      -18.1487    -1.70749   -0.194922 -0.00289151 2.71399e-05
+       7.07856    0.666146  -0.0159072 2.71399e-05    0.728653 ]
+pos/mom/mf  (-9.7692,4.44276,20.2247)   (-52.7506,23.67,104.51)   (-0.000396573,0.00018035,3.81061) 
+%MSG
+[2019-02-21 13:30:50.313086 +0000][Error  ][XRootD            ] [dpms29.indiacms.res.in:1095] Impossible to send message kXR_readv (handle: 0x00000000, chunks: 42, total size: 18973112). Trying to recover.
+[2019-02-21 13:30:50.313191 +0000][Error  ][XRootD            ] [dpms29.indiacms.res.in:1095] Unable to get the response to request kXR_readv (handle: 0x00000000, chunks: 42, total size: 18973112)
+%MSG-w XrdAdaptorInternal:  (NoModuleName) 21-Feb-2019 13:30:50 UTC pre-events
+XrdRequestManager::handle(name='root://cmsxrootd.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/7CCCA118-8F63-2041-967A-9AEDAE077803.root) failure when reading from dpms29.indiacms.res.in:1095 (unknown site); failed with error '[ERROR] Server responded with an error: [3010] Opening relative path '?tried=+1213cmsxrootd2.fnal.gov1213xrootd.unl.edu' is disallowed.
+' (errno=3010, code=400).
+%MSG
+%MSG-w XrdAdaptorInternal:  (NoModuleName) 21-Feb-2019 13:30:50 UTC pre-events
+Request failure when reading from dpms29.indiacms.res.in:1095 (unknown site)
+%MSG
+%MSG-w XrdAdaptor:  (NoModuleName) 21-Feb-2019 13:30:50 UTC pre-events
+Data is now served from  instead of previous indiacms.res.in
+%MSG
+%MSG-w XrdAdaptorInternal:  (NoModuleName) 21-Feb-2019 13:30:51 UTC pre-events
+Caught a CMSSW exception when running connection recovery.
+%MSG
+----- Begin Fatal Exception 21-Feb-2019 13:30:51 UTC-----------------------
+An exception of category 'FileReadError' occurred while
+   [0] Calling InputSource::getNextItemType
+   [1] Reading branch EventAuxiliary
+   [2] Calling XrdFile::readv()
+   [3] XrdAdaptor::ClientRequest::HandleResponse() failure while running connection recovery
+   [4] Handling XrdAdaptor::RequestManager::requestFailure()
+   [5] In XrdAdaptor::RequestManager::OpenHandler::HandleResponseWithHosts()
+Exception Message:
+XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/7CCCA118-8F63-2041-967A-9AEDAE077803.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] No servers are reachable via public IPv4 network to read the file.
+' (errno=3011, code=400)
+   Additional Info:
+      [a] Original error: '[ERROR] Server responded with an error: [3010] Opening relative path '?tried=+1213cmsxrootd2.fnal.gov1213xrootd.unl.edu' is disallowed.
+' (errno=3010, code=400, source=dpms29.indiacms.res.in:1095 (unknown site)).
+      [b] Original failed source is dpms29.indiacms.res.in:1095 (unknown site)
+      [c] Disabled source: dpms29.indiacms.res.in:1095
+----- End Fatal Exception -------------------------------------------------
+Another exception was caught while trying to clean up files after the primary fatal exception.
+21-Feb-2019 13:30:51 UTC  Closed file root://cmsxrootd.fnal.gov//store/mc/RunIIAutumn18DRPremix/JPsiToMuMu_Pt20to100-pythia8-gun/GEN-SIM-RAW/102X_upgrade2018_realistic_v15_ext1-v1/110000/7CCCA118-8F63-2041-967A-9AEDAE077803.root
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 BasicTrajectoryState -w TrackProducer:pi                       2        2
+    2 GlobalMuon           -w GlobalMuonProduc                       4        4
+    3 GlobalTrajectoryBuil -w GlobalMuonProduc                       4        4
+    4 Muon                 -w GlobalMuonProduc                       4        4
+    5 PFTrackTransformer   -w PFTrackProducer:                       2        2
+    6 PFTrackTransformer   -w PFTrackProducer:                       2        2
+    7 RecoMuon             -w GlobalMuonProduc                       4        4
+    8 XrdAdaptor           -w (NoModuleName)                         1        1
+    9 XrdAdaptor           -w file_open                              1        1
+   10 XrdAdaptorInternal   -w (NoModuleName)                         3        3
+   11 XrdAdaptorInternal   -w file_open                              2        2
+   12 TkDetLayers          -e ConversionTrackC                       1        1
+   13 Additional Exception -s PostGlobalEndRun                       1        1
+   14 Fatal Exception      -s PostProcessPath                        1        1
+   15 fileAction           -s file_close                             1        1
+   16 fileAction           -s file_open                              3        3
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 BasicTrajectoryState 1/88310          1/88310          
+    2 GlobalMuon           1/88048          1/88116          1/88214
+    3 GlobalTrajectoryBuilderBase 1/88048          1/88116          1/88214
+    4 Muon                 1/88048          1/88116          1/88214
+    5 PFTrackTransformer   1/88227          1/88227          
+    6 PFTrackTransformer   1/88227          1/88227          
+    7 RecoMuon             1/88048          1/88116          1/88214
+    8 XrdAdaptor           pre-events                        
+    9 XrdAdaptor           pre-events                        
+   10 XrdAdaptorInternal   pre-events       pre-events       pre-events
+   11 XrdAdaptorInternal   pre-events       pre-events       
+   12 TkDetLayers          Run: 1 Stream: 0                  
+   13 Additional Exceptions PostGlobalEndRun                  
+   14 Fatal Exception      PostProcessEvent                  
+   15 fileAction           PostGlobalEndRun                  
+   16 fileAction           pre-events       pre-events       pre-events
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                29                  29
+Error                   1                   1
+System                  6                   6
+
+dropped waiting message count 0
+exit code 85, skipping xrdcp
