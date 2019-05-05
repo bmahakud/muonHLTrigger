@@ -58,6 +58,24 @@ root -l -b -q 'readNtuplesPostfilter_L1WrtOffline.C("/eos/uscms/store/user/bmaha
 ```
 
 After completing this step, you will get several root files , inside which efficiency plots will be stored. You can proceed to the next step to produce plots using the root files obtained in this step.
+Different kinds of root macros available to produce efficiencies : L1 eff, L2 Eff,  L3 Eff wrt. L1 etc.
+```
+Diff_Cascade_IterL3.C                       readNtuplesPostfilter_L1WrtOffline.C
+KinePlot_BoostedIterL3.C                    readNtuplesPre_CascadeAndTkMu.C
+L2NSeedingPlots_forAN.C                     readNtuplesPrefilter_IterL3.C
+MuonOffHltTrackMatch_Cascade.C              readNtuplesPrefilter_IterL3_IO2fromL1nL2.C
+MuonOffHltTrackMatch_IterL3_PtResolution.C  readNtuplesPrefilter_IterL3_IOFromL1.C
+OIFromCode_readNtuplesPostfilter_forAN.C    readNtuplesPrefilter_IterL3_IOFromL2.C
+readNtuplesPost_CascadeMu50.C               readNtuplesPrefilter_IterL3_L2EffoverL1.C
+readNtuplesPost_CascadeOnly.C               readNtuplesPrefilter_IterL3_L2IneffoverL1.C
+readNtuplesPost_CascadenTkMu.C              readNtuplesPrefilter_IterL3_L2Purity.C
+readNtuplesPost_TkMuOnly.C                  readNtuplesPrefilter_IterL3_OIonly.C
+readNtuplesPostfilter_BoostedIterL3.C       readNtuplesPrefilter_IterL3_PixelPair.C
+readNtuplesPostfilter_IterL3.C              readNtuplesPrefilter_SharedHitsIterL3.C
+readNtuplesPostfilter_IterL3_L2overL1Eff.C  readNtuplesPrefilter_forANBoostedJPsi.C
+readNtuplesPostfilter_IterL3_OIonly.C
+
+```
 
 # Step-3: Make plots
 
