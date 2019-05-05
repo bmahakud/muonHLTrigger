@@ -35,6 +35,13 @@ Or for the muon HLT paper, the config files could be generated using the instruc
 
 https://twiki.cern.ch/twiki/bin/viewauth/CMS/MuonHLTPerformanceStudies
 
+#CRAB
+
+There are example crab configs available for crab submission: CrabConfig_MC.py, CrabConfig_DataA_v1.py
+
+
+
+# Produce Efficiency plots running on top of Ntuples produced from the previous step.
 
 
 
