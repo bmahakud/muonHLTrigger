@@ -15,7 +15,7 @@ cd RecoMuon/TrackerSeedGenerator/plugins
 cp /afs/cern.ch/user/b/bmahakud/public/MuonOISeeders_v3p5/TSGForOIFromL2.h .
 cp /afs/cern.ch/user/b/bmahakud/public/MuonOISeeders_v3p5/TSGForOIFromL2.cc .
 cd -
-git clone https://github.com/bmahakud/muonHLTrigger
+git clone https://github.com/bmahakud/muonHLTrigger MuonHLTNtuples
 scram b -j 8
 voms-proxy-init -voms cms 
 ```
